@@ -1,0 +1,88 @@
+.more-colors {
+  background-color:      orange;
+}
+.log-in {
+  background-color:      #ff1744;
+}
+.sign-up {
+  background-color:      #7986cb;
+}
+.content-container {
+  padding-top:           1rem;
+}
+
+.content-box {
+  height:                100%;
+}
+
+.content-box-img {
+  width:                 60%;
+  height:                30%;
+  padding-bottom:        1rem;
+}
+.content-box-name {
+  padding-bottom:        1.5rem;
+}
+.content-img {
+  max-width:             70%;
+  max-height:            30%;
+  box-shadow:            5px 10px 5px 0 grey;
+}
+.content-box-info {
+  margin:                0.625rem;
+  padding:               1px;
+  font-size:             3vw;
+}
+.content-box-1:hover, .content-box-2:hover, .content-box-3:hover {
+  box-shadow:            5px 10px 5px 0 grey;
+  background-color:      var(--primar-content-color);
+  border-color:          var(--primar-content-color);
+  color:                 black;
+}
+.content-box-2:hover {
+  border-color:          var(--secondary-content-color);
+  background-color:      var(--secondary-content-color);
+}
+.content-box-3:hover {
+  border-color:          var(--tertiary-content-color);
+  background-color:      var(--tertiary-content-color);
+}
+.footer-link {
+  color:                 violet;
+}
+@keyframes colorswitch {
+  0%   {background-color:red;}
+  25%  {background-color:yellow;}
+  50%  {background-color:blue;}
+  75%  {background-color:green;}
+  100% {background-color:red;}
+}
+.more-colors:hover, .log-in:hover, .sign-up:hover {
+  color:                 var(--primary-color);
+}
+@keyframes mirror {
+  0%   {filter: hue-rotate(1deg);}
+  25%  {filter: hue-rotate(90deg);}
+  50%  {filter: hue-rotate(180deg);}
+  75%  {filter: hue-rotate(270eg);}
+  100% {filter: hue-rotate(359deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

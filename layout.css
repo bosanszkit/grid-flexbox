@@ -1,0 +1,59 @@
+.container {
+  display:               grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows:    5% 90% 5%;
+  grid-auto-flow:        column;
+}
+
+.header, .content, .footer {
+  grid-column:           1/ -1;
+}
+
+.header {
+  display:               flex;
+  flex-direction:        row;
+  justify-content:       space-between;
+  align-items:           center;
+}
+
+.content-container {
+  display:               grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:    minmax(33%, auto);
+  grid-gap:              1rem;
+  align-content:         center;
+}
+
+  .content-box {
+    place-self:            center stretch;
+    align-items:           center;
+    align-content:         center;
+    display:               flex;
+    flex-direction:        column;
+    filter:                grayscale(100%);
+  }
+
+  .content-box-1, .content-box-2, .content-box-3 {
+    grid-column:           1 / 1;
+    transition:            all .5s ease-in .1s;
+  }
+
+  .content-box-2 {
+    grid-column:           2 / 2;
+  }
+  .content-box-3 {
+    grid-column:           3 / 3;
+  }
+
+  .content-img {
+    animation:             mirror 3s linear .1s infinite normal;
+  }
+
+.content-box-1:hover, .content-box-2:hover, .content-box-3:hover {
+  transform:             scale(1.05,1.1);
+  filter:                grayscale(0%);
+}
+
+.more-colors:hover, .log-in:hover, .sign-up:hover {
+  animation:             colorswitch 5s linear .2s infinite alternate;
+}
